@@ -26,7 +26,7 @@ The "CSV Verification" shows the final result sent to the DB server, so you can 
 
 **Step 1**: Change the server declarations in the beginning of the script to match your organization's settings. If your OnGuard DB server was named "ONGUARD-DB.Company.domain", it would likely be "ONGUARD-DB\LENEL". If you get an error, try the FQDN instead "ONGUARD-DB.COMPANY.DOMAIN\LENEL" 
 
-You will also need the ACCESSLVLID of the level you want to use. First, create an access level with no readers in it, and name it something distinct so it can be found easily. Something like "0" or "1" will go straight to the top, so these are good choices. To find the ACCESSLVLID, look in the database (AccessControl.dbo.ACCESSLVL) and it should be listed. For a name of "0", the query to find it in MS SQL would be "SELECT * FROM AccessControl.dbo.ACCESSLVL WHERE DESCRIPT like '0'". In the example below, this gives us an ACCESSLVID of 40, which we then put in the script in the place of '0000'. 
+You will also need the ACCESSLVLID of the level you want to use. First, create an access level with no readers in it, and name it something distinct so it can be found easily. Something like "0" or "1" will go straight to the top, so these are good choices. To find the ACCESSLVLID, look in the database (AccessControl.dbo.ACCESSLVL) and it should be listed. For a name of "0", the query to find it in MS SQL would be **"SELECT * FROM AccessControl.dbo.ACCESSLVL WHERE DESCRIPT like '0'"**. In the example below, this gives us an ACCESSLVID of 40, which we then put in the script in the place of '0000'. 
 
 ![Example7](https://github.com/jmac5/OnGuard-List-Tool/blob/main/Tool%20Screenshots/Screen%20Shot%202021-01-11%20at%208.32.35%20AM.png)
 

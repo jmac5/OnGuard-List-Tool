@@ -21,3 +21,23 @@ Here you can see the following:
 * 175940103 is added without issue
 
 The "CSV Verification" shows the final result sent to the DB server, so you can make sure what you sent is what you wanted. In this case, it verifies that only the valid IDs from the input above have been provided to the database query. This was mainly for my debugging purposes, but it can prove helpful or comforting to you, as well. 
+
+# Directions
+
+**Step 1**: Change the server declarations in the beginning of the script to match your organization's settings. If your OnGuard DB server was named "ONGUARD-DB.Company.domain", it would likely be "ONGUARD-DB\LENEL". If you get an error, try the FQDN instead "ONGUARD-DB.COMPANY.DOMAIN\LENEL" 
+
+You will also need the ACCESSLVLID of the level you want to use. First, create an access level with no readers in it, and name it something distinct so it can be found easily. Something like "0" or "1" will go straight to the top, so these are good choices. To find the ACCESSLVLID, look in the database (AccessControl.dbo.ACCESSLVL) and it should be listed. For a name of "0", the query to find it in MS SQL would be "SELECT * FROM AccessControl.dbo.ACCESSLVL WHERE DESCRIPT like '0'". In the example below, this gives us an ACCESSLVID of 40, which we then put in the script in the place of '0000'. 
+
+![Example7](https://github.com/jmac5/OnGuard-List-Tool/blob/main/Tool%20Screenshots/Screen%20Shot%202021-01-11%20at%208.32.35%20AM.png)
+
+![Example2](https://github.com/jmac5/OnGuard-List-Tool/blob/main/Tool%20Screenshots/Screen%20Shot%202021-01-11%20at%208.12.06%20AM.png)
+
+**Step 2**: Once that is all set, you can save the script as whatever you'd like to your machine. This should make it possible to run (running directly after download won't work, and throws a signing error). Once saved, go ahead and "Run with Powershell" or simply double-click the script. If Sql-cmd modules have been installed, it should fire right up. Here's an example of what it looks like when I add a list of 3 IDs, and add our placeholder (0) to them using the program.
+
+**Step 3**: Launch System Administration, and search for anyone who has "0" on their badge. If done correctly, this should yield only the 3 we selected, as shown in the screenshots below. From there, you can do Cardholder > Bulk operations on the list, which should save you significant time! 
+
+![Example4](https://github.com/jmac5/OnGuard-List-Tool/blob/main/Tool%20Screenshots/Screen%20Shot%202021-01-11%20at%208.22.35%20AM.png)
+
+![Example5](https://github.com/jmac5/OnGuard-List-Tool/blob/main/Tool%20Screenshots/Screen%20Shot%202021-01-11%20at%208.23.18%20AM.png)
+
+![Example6](https://github.com/jmac5/OnGuard-List-Tool/blob/main/Tool%20Screenshots/Screen%20Shot%202021-01-11%20at%208.24.16%20AM.png)

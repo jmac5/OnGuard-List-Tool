@@ -34,9 +34,10 @@ You will also need the ACCESSLVLID of the level you want to use. First, create a
 
 **Step 2**: Once that is all set, you can save the script as whatever you'd like to your machine. This should make it possible to run (running directly after download won't work, and throws a signing error). Once saved, go ahead and "Run with Powershell" or simply double-click the script. If Sql-cmd modules have been installed, it should fire right up. Here's an example of what it looks like when I add a list of 3 IDs, and add our placeholder (0) to them using the program.
 
+![Example4](https://github.com/jmac5/OnGuard-List-Tool/blob/main/Tool%20Screenshots/Screen%20Shot%202021-01-11%20at%208.22.35%20AM.png)
+
 **Step 3**: Launch System Administration, and search for anyone who has "0" on their badge. If done correctly, this should yield only the 3 we selected, as shown in the screenshots below. From there, you can do Cardholder > Bulk operations on the list, which should save you significant time! 
 
-![Example4](https://github.com/jmac5/OnGuard-List-Tool/blob/main/Tool%20Screenshots/Screen%20Shot%202021-01-11%20at%208.22.35%20AM.png)
 
 ![Example5](https://github.com/jmac5/OnGuard-List-Tool/blob/main/Tool%20Screenshots/Screen%20Shot%202021-01-11%20at%208.23.18%20AM.png)
 

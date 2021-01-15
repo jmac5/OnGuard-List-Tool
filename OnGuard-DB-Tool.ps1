@@ -46,7 +46,7 @@ public static extern bool ShowWindow(IntPtr hWnd, Int32 nCmdShow);
 
 ############################################# Create Window
 $Form = New-Object System.Windows.Forms.Form
-$Form.Size = New-Object System.Drawing.Size(500,400) 
+$Form.Size = New-Object System.Drawing.Size(465,400) 
 $Form.text = "OnGuard List Building Tool"   
 ############################################# End Create Window
 

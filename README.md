@@ -42,8 +42,3 @@ You will also need the ACCESSLVLID of the level you want to use. First, create a
 ![Example5](https://github.com/jmac5/OnGuard-List-Tool/blob/main/Tool%20Screenshots/Screen%20Shot%202021-01-11%20at%208.23.18%20AM.png)
 
 ![Example6](https://github.com/jmac5/OnGuard-List-Tool/blob/main/Tool%20Screenshots/Screen%20Shot%202021-01-11%20at%208.24.16%20AM.png)
-
-
-If this helped you, perhaps consider buying me a coffee! It's far cheaper than the $XXXXX Professional Services would have charged to build this for you! It's totally optional, and I truly do want you to have this for free!
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate?business=QQDJSFNE4TU3A&currency_code=USD)

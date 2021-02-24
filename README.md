@@ -12,10 +12,10 @@ Here you can see the following:
 
 * The padded 0s are removed from badge "1"
 * Badge 22943 is added without issue
-* The random ASCII is ignored, and an error is thrown for invalid IDs
+* The random ASCII is ignored
 * "hello" is ignored
 * "I am not an ID number" is ignored
-* The date of 1/8/21 is ignored
+* The date of 1/8/21 is ignored, and an error is thrown for invalid IDs
 * 50975 is added without issue
 * Blank line is ignored
 * 175940103 is added without issue

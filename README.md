@@ -4,7 +4,7 @@ A tool written to interact with a SQL Database to upload a list of users as a CS
 
 PRE-REQ: SqlServer cmdlets for Powershell, available here: https://docs.microsoft.com/en-us/sql/powershell/download-sql-server-ps-module?view=sql-server-ver15
 
-To use the application, simply launch it with PowerShell, and a GUI should show up. From here, you can paste in a list of ID numbers or badge numbers (your choice), and separate them by line. It's ok if Names/emails/ etc get mixed in, they will be stripped out when processed. Once you have modified the script with your servers/access level ID, pressing the ADD PLACEHOLDER TO LIST button will assign that access level to all the badges/IDs on that list. This will allow you to do a search in OnGuard for "Has at least one of the selected levels", and selecting the empty level used as a placeholder. 
+To use the application, simply launch it with PowerShell, and a GUI should show up. From here, you can paste in a list of ID numbers or badge numbers (your choice), and **separate them, one ID per line**. It's ok if Names/emails/ etc get mixed in, they will be stripped out when processed. Once you have modified the script with your servers/access level ID, pressing the ADD PLACEHOLDER TO LIST button will assign that access level to all the badges/IDs on that list. This will allow you to do a search in OnGuard for "Has at least one of the selected levels", and selecting the empty level used as a placeholder. 
 
 ![Example](https://github.com/jmac5/Portfolio/blob/master/OnGuard%20DB%20Tool%20Screenshot.png)
 
